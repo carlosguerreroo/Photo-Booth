@@ -1,0 +1,124 @@
+fileFormatVersion: 2
+guid: f8e922f5569f14ed69d85ed49aeaac0e
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: corazon1
+    100002: corazon10
+    100004: corazon11
+    100006: corazon12
+    100008: corazon2
+    100010: corazon3
+    100012: corazon4
+    100014: corazon5
+    100016: corazon6
+    100018: corazon7
+    100020: corazon8
+    100022: corazon9
+    100024: //RootNode
+    400000: corazon1
+    400002: corazon10
+    400004: corazon11
+    400006: corazon12
+    400008: corazon2
+    400010: corazon3
+    400012: corazon4
+    400014: corazon5
+    400016: corazon6
+    400018: corazon7
+    400020: corazon8
+    400022: corazon9
+    400024: //RootNode
+    2300000: corazon1
+    2300002: corazon10
+    2300004: corazon11
+    2300006: corazon12
+    2300008: corazon2
+    2300010: corazon3
+    2300012: corazon4
+    2300014: corazon5
+    2300016: corazon6
+    2300018: corazon7
+    2300020: corazon8
+    2300022: corazon9
+    3300000: corazon1
+    3300002: corazon10
+    3300004: corazon11
+    3300006: corazon12
+    3300008: corazon2
+    3300010: corazon3
+    3300012: corazon4
+    3300014: corazon5
+    3300016: corazon6
+    3300018: corazon7
+    3300020: corazon8
+    3300022: corazon9
+    4300000: corazon4
+    4300002: corazon11
+    4300004: corazon12
+    4300006: corazon9
+    4300008: corazon3
+    4300010: corazon1
+    4300012: corazon2
+    4300014: corazon6
+    4300016: corazon5
+    4300018: corazon8
+    4300020: corazon7
+    4300022: corazon10
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 1
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

@@ -1,0 +1,129 @@
+fileFormatVersion: 2
+guid: 8b77e46d8d4ff4d45a388991b7fcbe52
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: andrea
+    100002: anos
+    100004: group
+    100006: xv
+    100008: xvanos:a1_Plane_014
+    100010: xvanos:a2_Plane_019
+    100012: xvanos:a3_Plane_024
+    100014: xvanos:d_Plane_021
+    100016: xvanos:e_Plane_023
+    100018: xvanos:enie_Plane_016
+    100020: xvanos:n_Plane_020
+    100022: xvanos:o_Plane_017
+    100024: xvanos:r_Plane_022
+    100026: xvanos:s_Plane_018
+    100028: xvanos:transform1
+    100030: xvanos:transform10
+    100032: xvanos:transform11
+    100034: xvanos:transform12
+    100036: xvanos:transform2
+    100038: xvanos:transform3
+    100040: xvanos:transform4
+    100042: xvanos:transform5
+    100044: xvanos:transform6
+    100046: xvanos:transform7
+    100048: xvanos:transform8
+    100050: xvanos:transform9
+    100052: xvanos:v_Plane_008
+    100054: xvanos:x_Plane_002
+    100056: //RootNode
+    400000: andrea
+    400002: anos
+    400004: group
+    400006: xv
+    400008: xvanos:a1_Plane_014
+    400010: xvanos:a2_Plane_019
+    400012: xvanos:a3_Plane_024
+    400014: xvanos:d_Plane_021
+    400016: xvanos:e_Plane_023
+    400018: xvanos:enie_Plane_016
+    400020: xvanos:n_Plane_020
+    400022: xvanos:o_Plane_017
+    400024: xvanos:r_Plane_022
+    400026: xvanos:s_Plane_018
+    400028: xvanos:transform1
+    400030: xvanos:transform10
+    400032: xvanos:transform11
+    400034: xvanos:transform12
+    400036: xvanos:transform2
+    400038: xvanos:transform3
+    400040: xvanos:transform4
+    400042: xvanos:transform5
+    400044: xvanos:transform6
+    400046: xvanos:transform7
+    400048: xvanos:transform8
+    400050: xvanos:transform9
+    400052: xvanos:v_Plane_008
+    400054: xvanos:x_Plane_002
+    400056: //RootNode
+    2300000: andrea
+    2300002: anos
+    2300004: xv
+    3300000: andrea
+    3300002: anos
+    3300004: xv
+    4300000: xv
+    4300002: anos
+    4300004: andrea
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 1
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
