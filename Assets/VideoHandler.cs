@@ -4,13 +4,13 @@ using System.Collections;
 public class VideoHandler : MonoBehaviour {
 
     private GUIObject introVideo;
-    private int introVideoLimit = 305;
+    public int introVideoLimit = 305;
     private menuButton introVideoButton;
     private Texture2D[] textureIntroVideo = new Texture2D[305];
 	private int whichFrame = 0;
     public string activatedVideo = "";
     public string pathFiles = "";
-
+    private float fps = 16;
     void Awake () 
     {
         introVideo = new GUIObject (Resources.Load<Texture2D> ("MainCamera/" + activatedVideo + "/" + pathFiles + "_00000"),
@@ -34,7 +34,8 @@ public class VideoHandler : MonoBehaviour {
 	
 	void LateUpdate () {
 	
-    
+        whichFrame = (int)(Time.timeSinceLevelLoad * fps);
+
         string numberOfFrame = whichFrame.ToString ();
       
         if (whichFrame >= introVideoLimit) 
