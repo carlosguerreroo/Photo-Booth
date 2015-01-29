@@ -84,7 +84,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour,
             {
                 SelectOption();
             }
-                
+           
+           Debug.Log("Arista Logo");
         }
     }
 

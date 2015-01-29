@@ -15,7 +15,9 @@ public class VideoHandler : MonoBehaviour {
     {
         introVideo = new GUIObject (Resources.Load<Texture2D> ("MainCamera/" + activatedVideo + "/" + pathFiles + "_00000"),
                                                              0.5F, 0.4F, 0.8F, 1.1F, 1F, 1F, true, false, false, true, true);
-        introVideo.Render (false);
+        
+        if(introVideo.GetTarget() != null)
+            introVideo.Render (false);
 
         LoadTextures (activatedVideo);
 	}
@@ -29,7 +31,8 @@ public class VideoHandler : MonoBehaviour {
     void OnDisable ()
     {
         DefaultTrackableEventHandler.anotherAnimation = false;
-        introVideo.Render (false);
+        if (introVideo.GetTarget() != null)
+            introVideo.Render (false);
     }
 	
 	void LateUpdate () {
