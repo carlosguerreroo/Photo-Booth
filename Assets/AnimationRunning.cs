@@ -2,11 +2,6 @@
 using System.Collections;
 
 public class AnimationRunning : MonoBehaviour {
-
-	void Awake () 
-    {
-
-	}
 	
     void OnEnable() 
     {
@@ -17,11 +12,6 @@ public class AnimationRunning : MonoBehaviour {
     {
         DefaultTrackableEventHandler.anotherAnimation = false;
     }
-
-	void Update ()
-    {
-	
-	}
 
     private IEnumerator WaitForAnimation ( Animation animation )
     {
