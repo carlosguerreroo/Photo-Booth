@@ -35,8 +35,6 @@ public class VideoHandler : MonoBehaviour {
 	void LateUpdate () {
 	
         whichFrame = (int)(Time.timeSinceLevelLoad * fps);
-
-        string numberOfFrame = whichFrame.ToString ();
       
         if (whichFrame >= introVideoLimit) 
         {
