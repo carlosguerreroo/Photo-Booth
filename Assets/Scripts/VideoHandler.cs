@@ -11,6 +11,8 @@ public class VideoHandler : MonoBehaviour {
     public string activatedVideo = "";
     public string pathFiles = "";
     private float fps = 16;
+    private float enableTime;
+
     void Awake () 
     {
         introVideo = new GUIObject (Resources.Load<Texture2D> ("MainCamera/" + activatedVideo + "/" + pathFiles + "_00000"),
@@ -24,8 +26,8 @@ public class VideoHandler : MonoBehaviour {
 
     void OnEnable() 
     {
-        whichFrame = 0;
         introVideo.Render (true);
+        enableTime = Time.time;
     }
 
     void OnDisable ()
@@ -37,8 +39,8 @@ public class VideoHandler : MonoBehaviour {
 	
 	void LateUpdate () {
 	
-        whichFrame = (int)(Time.timeSinceLevelLoad * fps);
-      
+        whichFrame = (int)((Time.timeSinceLevelLoad - enableTime) * fps);
+
         if (whichFrame >= introVideoLimit) 
         {
             gameObject.SetActive(false);

@@ -81,7 +81,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour,
         {
             
             if (!anotherAnimation) 
-            {
+            {   
+                anotherAnimation = true;
                 SelectOption();
             }
            

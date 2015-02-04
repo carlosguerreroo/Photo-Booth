@@ -96,6 +96,7 @@ public class CameraEventHandler : MonoBehaviour,
             {   
                 takingPhoto = true;
                 counterImage.enabled = true;
+                counter = 0;
                 InvokeRepeating("ShowCounter", 1.0f, 1.0f);
 
             }
@@ -121,10 +122,11 @@ public class CameraEventHandler : MonoBehaviour,
 
     public void TakePhoto ()
     {   
-        takingPhoto = false;
         counterImage.sprite = counterSprites[0];
         Application.CaptureScreenshot("Photo_" + photoCounter + ".png", 4);
         photoCounter++;
+        takingPhoto = false;
+
     }
 
     #endregion 
