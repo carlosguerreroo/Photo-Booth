@@ -5,7 +5,7 @@ Confidential and Proprietary - Qualcomm Connected Experiences, Inc.
 ==============================================================================*/
 
 using UnityEngine;
-using UIImage = UnityEngine.UI.Image;
+// using UIImage = UnityEngine.UI.Image;
 
 public class CameraEventHandler : MonoBehaviour,
                                             ITrackableEventHandler
@@ -17,8 +17,9 @@ public class CameraEventHandler : MonoBehaviour,
     private bool takingPhoto = false;
     private int counter = 0;
     private int COUNTERLIMIT = 3;
-    private UIImage counterImage;
-    public  Sprite [] counterSprites;
+    // private UIImage counterImage;
+    // public  Sprite [] counterSprites;
+    private GUIObject[] counterGUI= new GUIObject[3];
     private int photoCounter = 0;
     #endregion 
 
@@ -26,9 +27,27 @@ public class CameraEventHandler : MonoBehaviour,
         
     void Awake ()
     {
-        counterImage = GameObject.Find("Counter").gameObject.GetComponent<UIImage>();
-        InvokeRepeating("ShowCounter", 1.0f, 1.0f);
-        Debug.Log(Application.persistentDataPath);
+        // counterImage = GameObject.Find("Counter").gameObject.
+            // GetComponent<UIImage>();
+        // InvokeRepeating("ShowCounter", 1.0f, 1.0f);
+
+        for (int index= 0; index < counterGUI.Length; index++) {
+            counterGUI[index] = new GUIObject(
+                Resources.Load("GUI/" + (index + 1), 
+                typeof(Texture2D)) as Texture2D,
+                0.5f, 0.5f, 0.2f, 1.2f, 1.0f, 1.0f, false, false, false, true, 
+                true);
+            counterGUI[index].Render(false);
+            // counterGUI[index].xpos = 0.5f;
+            // counterGUI[index].ypos = 0.5f;
+            // counterGUI[index].CalculatePosition();
+        }
+
+        for (int index= 0; index < counterGUI.Length; index++) {
+            // counterGUI[index].xpos = 0.5f;
+            // counterGUI[index].ypos = 0.5f;
+            // counterGUI[index].CalculatePosition();
+        }
 
     }
 
@@ -95,8 +114,9 @@ public class CameraEventHandler : MonoBehaviour,
             if (!takingPhoto) 
             {   
                 takingPhoto = true;
-                counterImage.enabled = true;
+                // counterImage.enabled = true;
                 counter = 0;
+                counterGUI[counter].Render(true);
                 InvokeRepeating("ShowCounter", 1.0f, 1.0f);
 
             }
@@ -110,11 +130,15 @@ public class CameraEventHandler : MonoBehaviour,
         counter++;
         if (counter < COUNTERLIMIT) 
         {
-            counterImage.sprite = counterSprites[counter];
+            // counterImage.sprite = counterSprites[counter];
+            counterGUI[counter - 1].Render(false);
+            counterGUI[counter].Render(true);
+
         }
         else
         {   
-            counterImage.enabled = false;
+            counterGUI[2].Render(false);
+            // counterImage.enabled = false;
             CancelInvoke();
             TakePhoto();
         }
@@ -122,7 +146,7 @@ public class CameraEventHandler : MonoBehaviour,
 
     public void TakePhoto ()
     {   
-        counterImage.sprite = counterSprites[0];
+        // counterImage.sprite = counterSprites[0];
         Application.CaptureScreenshot("Photo_" + photoCounter + ".png", 4);
         photoCounter++;
         takingPhoto = false;
